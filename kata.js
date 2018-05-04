@@ -24,11 +24,12 @@ function add(numbers){
 		if (num > 1000)
 			continue;
 		
-		if ( num < 0 || neg_numbers.length > 0 ){
+		if ( num < 0 ){
 			 neg_numbers.push(num);
 			 continue;
 		}
-		sum += Number( splitted[i] );
+		else
+			sum += num;
 	}
 
 	if (neg_numbers.length > 0)
