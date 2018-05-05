@@ -41,8 +41,9 @@ function add(numbers){
 function test(numbers){
 	try {
 		console.log("==================");
+		console.log("Testing [" + JSON.stringify(numbers) + "]...");
 		x = add(numbers);
-		console.log("Testing [" + numbers + "]... Result: " + x);
+		console.log("Result: " + x);
 	}
 	catch(e) {
 		console.log(e);
@@ -54,6 +55,7 @@ test("5");
 test("2,4");
 test("1,2,3");
 test("1,-2,-3");
+test("1,4,7,10,");
 test("1,1005,3");
 test("2,1000,3");
 test("4,5\n6");
