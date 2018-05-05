@@ -62,12 +62,3 @@ test("4,5\n6");
 test("//;\n1;3;5");
 test("//\n\n1\n3\n5");
 
-
-
-
-/*
-  		console.log(splitted[i].replace("\n","."));
-		console.log(Number( splitted[i] ));
-		console.log("=======================");
-		//sum += Number( splitted[i].replace("\\n","") );
- */
