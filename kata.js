@@ -16,7 +16,7 @@ function add(numbers){
 		console.log("new string to parse with delimiter: " + numbers);
 	}
 	
-	var splitted = numbers.replace("\n",delim).split(delim);
+	var splitted = numbers.replace(/\n/g,delim).split(delim);
 	for (i=0; i<splitted.length; i++){
 		
 		var num = Number(splitted[i]);
@@ -58,7 +58,7 @@ test("1,-2,-3");
 test("1,4,7,10,");
 test("1,1005,3");
 test("2,1000,3");
-test("4,5\n6");
+test("4,5\n6\n8\n9\n1,2");
 test("//;\n1;3;5");
 test("//\n\n1\n3\n5");
 
